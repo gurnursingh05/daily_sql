@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "BxT5lNfQGvq8modg-aSRa",
+            "query": "SELECT\n\tjob_id,\n\tjob_title_short,\n\tjob_location,\n\tjob_via,\n\tsalary_year_avg\nFROM\n\tjob_postings_fact\nWHERE \n\tjob_title_short = 'Data Engineer'",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "problem3_19_02_26",
+            "updatedAt": "2026-02-19T15:41:49.308Z",
+            "createdAt": "2026-02-19T15:41:49.308Z"
+        }
+    ]
+}
