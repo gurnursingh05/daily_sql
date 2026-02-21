@@ -2,12 +2,13 @@
     "version": 2,
     "inquiries": [
         {
-            "id": "fjolNtyNOZThIllGXgGI7",
-            "query": "SELECT DISTINCT\n\tjob_location\nFROM\n\tjob_postings_fact\nORDER BY \n\tjob_location asc;\n",
+            "id": "FDKc3HixuANwT263SyMfE",
+            "query": "SELECT\n\tjob_id,\n\tjob_title_short,\n\tjob_location,\n\tjob_via\nFROM \n\tjob_postings_fact\nORDER BY \n\tjob_location ASC",
             "viewType": "chart",
             "viewOptions": {
                 "data": [],
                 "layout": {
+                    "autosize": true,
                     "xaxis": {
                         "range": [
                             -1,
@@ -21,14 +22,13 @@
                             4
                         ],
                         "autorange": true
-                    },
-                    "autosize": true
+                    }
                 },
                 "frames": []
             },
-            "name": "problem1_19_02_26",
-            "updatedAt": "2026-02-19T15:13:23.667Z",
-            "createdAt": "2026-02-19T15:13:23.667Z"
+            "name": "problem2_19_02_26",
+            "updatedAt": "2026-02-19T15:38:25.228Z",
+            "createdAt": "2026-02-19T15:38:25.228Z"
         }
     ]
 }

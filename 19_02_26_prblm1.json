@@ -2,13 +2,12 @@
     "version": 2,
     "inquiries": [
         {
-            "id": "7H7eUSUzyqF37Xnsv9e_l",
-            "query": "SELECT \n\tjob_id,\n    job_title_short,\n    job_location,\n    job_via,\n    salary_year_avg\nFROM\n\tjob_postings_fact\nWHERE\n \tjob_location = 'Tampa, FL'",
+            "id": "fjolNtyNOZThIllGXgGI7",
+            "query": "SELECT DISTINCT\n\tjob_location\nFROM\n\tjob_postings_fact\nORDER BY \n\tjob_location asc;\n",
             "viewType": "chart",
             "viewOptions": {
                 "data": [],
                 "layout": {
-                    "autosize": true,
                     "xaxis": {
                         "range": [
                             -1,
@@ -22,13 +21,14 @@
                             4
                         ],
                         "autorange": true
-                    }
+                    },
+                    "autosize": true
                 },
                 "frames": []
             },
-            "name": "problem1_21_02_26",
-            "updatedAt": "2026-02-21T09:01:48.064Z",
-            "createdAt": "2026-02-21T09:01:48.064Z"
+            "name": "problem1_19_02_26",
+            "updatedAt": "2026-02-19T15:13:23.667Z",
+            "createdAt": "2026-02-19T15:13:23.667Z"
         }
     ]
 }
