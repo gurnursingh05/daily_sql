@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "swEsZpICQ6be09ITbV3rK",
+            "query": "SELECT\n\tjob_id,\n    job_schedule_type,\n    job_title_short,\n    job_location,\n    job_via,\n    salary_year_avg\n    \nFROM\n\tjob_postings_fact\nWHERE\n\tjob_schedule_type <> 'Part-time' ",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "21_02_26_prblm3",
+            "updatedAt": "2026-02-21T09:14:59.463Z",
+            "createdAt": "2026-02-21T09:14:05.904Z"
+        }
+    ]
+}

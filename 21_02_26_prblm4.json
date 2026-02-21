@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "biPLxsIqm19lwECni5-xa",
+            "query": "SELECT\n\tjob_id,\n    job_title_short,\n    job_location,\n    job_via,\n    salary_year_avg\n    \nFROM\n\tjob_postings_fact\nWHERE\n\tjob_via <> 'via LinkedIn'",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "21_02_26_prblm4",
+            "updatedAt": "2026-02-21T09:17:02.967Z",
+            "createdAt": "2026-02-21T09:15:24.204Z"
+        }
+    ]
+}
