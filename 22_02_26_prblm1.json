@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "pTDoFckGVWbsJkkiZBbur",
+            "query": "SELECT \n\tjob_id,\n    job_title_short,\n    job_location,\n    job_via AS job_posted_site,\n    job_posted_date,\n    salary_year_avg AS avg_yearly_salary\nFROM job_postings_fact ",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "22_02_26_problem1",
+            "updatedAt": "2026-02-22T17:49:22.632Z",
+            "createdAt": "2026-02-22T17:49:22.632Z"
+        }
+    ]
+}
