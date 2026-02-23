@@ -3,7 +3,7 @@
     "inquiries": [
         {
             "id": "yfR-ezJhBNgY4RFBiBoRK",
-            "query": "SELECT\n\tactivity_id,\n    project_id,\n    hours_spent,\n    hours_rate,\n    hours_spent + hours_rate AS hours\nFROM invoices_fact\nORDER BY \n\thours DESC",
+            "query": "/*Practice Problem 1\nIn the invoices_fact table add the hours_spent to the hours_rate. \nThis could be used to prioritize tasks, higher values could indicate tasks that are both time-intensive and costly, \ntherefore requiring early attention.*/\nSELECT\n\tactivity_id,\n    project_id,\n    hours_spent,\n    hours_rate,\n    hours_spent + hours_rate AS hours\nFROM invoices_fact\nORDER BY \n\thours DESC",
             "viewType": "chart",
             "viewOptions": {
                 "data": [],
@@ -27,7 +27,7 @@
                 "frames": []
             },
             "name": "24_02_26_prblm1",
-            "updatedAt": "2026-02-23T19:11:30.724Z",
+            "updatedAt": "2026-02-23T19:14:27.568Z",
             "createdAt": "2026-02-23T19:11:30.724Z"
         }
     ]
