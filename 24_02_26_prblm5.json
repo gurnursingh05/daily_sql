@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "jkRLOT7UWCm1RehcX5MT3",
+            "query": "/*\nQuestion:In the job_postings_fact table count the number of job postings available for each country. \nUse the job_country column to group the job postings, and count the number of job postings (job_id) within each country group.\n*/\nSELECT \n\tjob_country,\n    COUNT(job_id) AS job_postings_count\nFROM \n\tjob_postings_fact\nGROUP BY\n\tjob_country\nORDER BY \n\tjob_postings_count DESC",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "24_02_26_prblm5",
+            "updatedAt": "2026-02-23T20:09:03.183Z",
+            "createdAt": "2026-02-23T20:09:03.183Z"
+        }
+    ]
+}
