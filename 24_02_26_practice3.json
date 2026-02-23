@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "4ERgC-Ccp9DvDvvCqulmU",
+            "query": "/*Practice Problem 3\nQuestion:\nCalculates the current month's total earnings per project\nCalculate a scenario where the hourly rate increases by $5\nWhy?\nSee the difference if we raised the hourly rate\nFigure out what's a reasonable raise\n*/\nSELECT \n\tproject_id,\n    hours_spent,\n    hours_rate AS rate_original,\n\tSUM(hours_spent * hours_rate) AS total_earnings,\n    hours_rate + 5 AS rate_hike,\n    SUM(hours_spent * (hours_rate + 5)) AS hike_earnings\nFROM invoices_fact\nGROUP BY \n\tproject_id",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "24_02_26_practice3",
+            "updatedAt": "2026-02-23T20:23:46.114Z",
+            "createdAt": "2026-02-23T20:23:46.114Z"
+        }
+    ]
+}
