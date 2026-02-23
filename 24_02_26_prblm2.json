@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "knbf3jYk-wcQa6fPx6ftN",
+            "query": "/*\nPractice Problem 2\nIn the invoices_fact table divide the hours_spent by the hours_rate. Return the activity_id as well. \nThis helps give us an efficiency ration a lower ratio could indicate a more cost-efficient task.\n*/\nSELECT \n\tactivity_id,\n    hours_spent,\n\thours_rate,\n    hours_spent / hours_rate AS hours_measure\nFROM\n\tinvoices_fact\t",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "24_02_26_prblm2",
+            "updatedAt": "2026-02-23T19:17:39.660Z",
+            "createdAt": "2026-02-23T19:17:39.660Z"
+        }
+    ]
+}
