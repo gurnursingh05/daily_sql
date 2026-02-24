@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "IWxVUCFDdMV50ISPG-yXi",
+            "query": "/*Question:\nWe're going to check that all skills that do not have a category assigned to it. This can be used for validating data.\nSo, get all skills from the skills_dim table that don't have a type classification assigned to them. Return the skill_id and skills\n*/\nSELECT \n\tskill_id,\n    skills,\n    type\nFROM \n\tskills_dim\nWHERE\n\ttype <> 'other'\nGROUP BY\n\tskill_id",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "autosize": true,
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    }
+                },
+                "frames": []
+            },
+            "name": "25_02_26_prblm1",
+            "updatedAt": "2026-02-24T19:20:24.635Z",
+            "createdAt": "2026-02-24T19:20:24.635Z"
+        }
+    ]
+}
