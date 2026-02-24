@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "8NsK9m6ypFsGYVdPDxU5G",
+            "query": "/*\nPractice Problem 2\nQuestion:\nFetch all job postings, including their job titles (job_title) and the names of the skills required (skills), even if no skills are listed for a job.\nEnsure that the job is located in \"New York\" and offers \"Health Insurance\". Use the job_postings_fact, skills_job_dim, and skills_dim tables.\n*/\nSELECT\n\tjob_postings_fact.job_title,\n    skills_dim.skills,\n\tjob_postings_fact.job_health_insurance,\n    skills_job_dim.job_id\nFROM \n\tjob_postings_fact\n\tINNER JOIN skills_job_dim ON job_postings_fact.job_id = skills_job_dim.job_id\n    INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id\n    \nWHERE\n\tjob_location = 'New York' AND job_health_insurance = '1'",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "25_02_26_prblm4",
+            "updatedAt": "2026-02-24T20:25:56.728Z",
+            "createdAt": "2026-02-24T20:25:56.728Z"
+        }
+    ]
+}
