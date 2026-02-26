@@ -1,0 +1,34 @@
+{
+    "version": 2,
+    "inquiries": [
+        {
+            "id": "8NsK9m6ypFsGYVdPDxU5G",
+            "query": "/*Question:Find the average salary and number of job postings for each job title for this: Write a query to list each unique job title from the job_postings_fact table. Count how many job postings exist for each job title.Calculate the average yearly salary for job postings associated with each job title.Group the results by the job title. Order By the average salary*/SELECT    job_postings_fact.job_title_short,    COUNT(job_postings_fact.job_id) AS jobs,    AVG(job_postings_fact.salary_year_avg) AS average_salaryFROM job_postings_factGROUP BY    job_title_shortORDER BY    average_salary DESC",
+            "viewType": "chart",
+            "viewOptions": {
+                "data": [],
+                "layout": {
+                    "xaxis": {
+                        "range": [
+                            -1,
+                            6
+                        ],
+                        "autorange": true
+                    },
+                    "yaxis": {
+                        "range": [
+                            -1,
+                            4
+                        ],
+                        "autorange": true
+                    },
+                    "autosize": true
+                },
+                "frames": []
+            },
+            "name": "25_02_26_prblm4",
+            "updatedAt": "2026-02-24T20:25:56.728Z",
+            "createdAt": "2026-02-24T20:25:56.728Z"
+        }
+    ]
+}
