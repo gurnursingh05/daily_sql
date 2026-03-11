@@ -7,7 +7,7 @@ SELECT
 FROM
     company_dim
 WHERE 
-    company_id IN (
+    company_id IN ( 
         SELECT 
             company_id
         FROM
